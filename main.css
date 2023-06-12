@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+header {
+    font-size: 8vmin;
+    color: darkgrey;
+    letter-spacing: 1vmin;
+}
+
+h1 {
+    color: grey;
+    font-size: 5vmin;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 10vmin);
+    grid-template-rows: repeat(3, 10vmin);
+    gap: 1vmin;
+    margin-top: 1vmin;
+}
+
+#board > div {
+    border-radius: 50%;
+    border: 0.3vmin solid black;
+}
+
+button {
+    margin-top: 5vmin;
+    padding: 3vmin;
+    font-size: 3vmin;
+    border-radius: 6vmin;
+    border: 0.2vmin black;
+    color: grey;
+}
+
+button:hover {
+    color: white;
+    background-color: mediumpurple;
+}

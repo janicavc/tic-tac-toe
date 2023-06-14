@@ -53,12 +53,11 @@ function playerChoice(evt) {
 }
 
 function getWinner () {
-    for (let i = 0; i < winningCombos.length; i++) {
-        if (Math.abs(board[winningCombos[i][0]] + board[winningCombos[i][1]] + board[winningCombos[i][2]]) === 3)
-        return board[winningCombos[i][0]];
-    }
+    // for (let i = 0; i < winningCombos.length; i++) {
+    //     if (Math.abs(board[winningCombos[i][0]] + board[winningCombos[i][1]] + board[winningCombos[i][2]]) === 3)
+    //     return board[winningCombos[i][0]];
+    // }
     if (board.includes(null)) return null;
-    return 'Tie';
 }
 
 function render() {
